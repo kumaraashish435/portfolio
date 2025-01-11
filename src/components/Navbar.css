@@ -1,0 +1,39 @@
+/* Navbar Container */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navigation List */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Navigation Item */
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  /* Navigation Link */
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .nav-link:hover {
+    color: #ff6600; /* Change to your desired hover color */
+  }
+  
