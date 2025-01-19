@@ -1,0 +1,40 @@
+.homes1{
+    /* background-color: blanchedalmond; */
+}
+.homes2{
+    background-color: rgb(53, 47, 37);
+}
+.homes3{
+    background-color: rgb(6, 129, 86);
+}
+.homes4{
+    background-color: rgb(205, 212, 255);
+}
+
+.intro{
+    width: 55%;
+    height: 100%;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.smintro{
+    width: 40%;
+    height: 15%;
+    background-color: blanchedalmond;
+    margin-left: 50px;
+}
+
+.name{
+    font-size: 4.5rem;
+    letter-spacing: 7px;
+    word-spacing: 5px;
+    margin-left: 50px;
+}
+
+.button{
+    margin-left: 50px;
+}

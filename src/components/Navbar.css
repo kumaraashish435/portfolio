@@ -1,39 +1,97 @@
 /* Navbar Container */
 .navbar {
-    background-color: #333;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center; /* Centers child elements horizontally */
+  align-items: center; /* Centers child elements vertically */
+  position: fixed;
+  bottom: 20px; /* Adjust vertical position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center adjustment */
+  width: 28%; /* Navbar width */
+  background: rgba(51, 51, 51, 0.8); /* Glassy effect */
+  backdrop-filter: blur(10px); /* Glassy effect */
+  padding: 10px 20px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  border-radius: 1000px; /* Rounded corners */
+  z-index: 1000; /* Ensure navbar stays on top */
+  transition: all 0.3s ease; /* Smooth transition for navbar itself */
+}
+
+/* Navigation List */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Navigation Item */
+.nav-item {
+  text-align: center;
+  border-radius: 1000px;
+}
+
+/* Navigation Link */
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px; /* Add padding for better clickable area */
+  border-radius: 50px; /* Rounded corners for active state */
+  transition: all 0.3s ease; /* Smooth transition for color, background, etc. */
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2); /* Subtle hover background */
+}
+
+/* Active Link */
+.nav-link.active {
+  color: black; /* Keep text white for contrast */
+  background: white; /* Highlight active link with orange background */
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.6); /* Add glow effect to active link */
+  transition: all 0.3s ease; /* Smooth transition for the active state */
+}
+
+/* Navigation Icon */
+.nav-icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease; /* Smooth transition for icon scaling */
+}
+
+/* Hover Effect for Icon */
+.nav-link:hover .nav-icon {
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+/* Navigation Text */
+.nav-text {
+  font-size: 20px;
+  margin-left: 10px;
+  white-space: nowrap;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
     align-items: center;
   }
-  
-  /* Navigation List */
-  .nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 800px;
-  }
-  
-  /* Navigation Item */
+
   .nav-item {
-    margin: 0 10px;
+    margin: 10px 0;
   }
-  
-  /* Navigation Link */
+
   .nav-link {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    padding: 15px 30px; /* Increase padding for better touch area */
   }
-  
-  /* Hover Effect */
-  .nav-link:hover {
-    color: #ff6600; /* Change to your desired hover color */
-  }
-  
+}
