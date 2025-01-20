@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
 import './Navbar.css'; // Import the CSS file
 
 const Navbar = () => {
-  const [selected, setSelected] = useState(null); // Track the selected icon
+  const location = useLocation();
+  const [selected, setSelected] = useState(null); 
 
   const handleClick = (index) => {
-    setSelected(index); // Update selected index on click
+    setSelected(index); 
   };
 
   return (
@@ -22,11 +23,11 @@ const Navbar = () => {
           <li className="nav-item" key={index}>
             <Link
               to={item.path}
-              className={`nav-link ${selected === index ? 'active' : ''}`}
+              className={`nav-link ${location.pathname === item.path ? 'active' : ''}`}
               onClick={() => handleClick(index)}
             >
               {item.icon}
-              {selected === index && <span className="nav-text">{item.label}</span>}
+              {location.pathname === item.path && <span className="nav-text">{item.label}</span>}
             </Link>
           </li>
         ))}
