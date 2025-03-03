@@ -1,5 +1,7 @@
 import "./pagescss/home.css";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import bgpic from "../assets/bgpic.jpg";
+
 
 const projects = [
   {
@@ -44,7 +46,7 @@ const Home = () => {
         {/* Profile Image */}
         <div className="relative mt-10 w-48 h-48 md:w-60 md:h-60">
           <img
-            src=".../assets/bgpic.jpg"
+            src={bgpic}
             alt="Profile"
             className="w-full h-full object-cover rounded-full border-4 border-black shadow-lg"
           />
