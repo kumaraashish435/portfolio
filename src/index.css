@@ -125,11 +125,6 @@
 
 
 
-@font-face {
-  font-family: 'myfonts';
-  src: url('src/assets/Olimfuturabook-RwOe.otf') format('opentype');
-}
-
 *{
   margin: 0;
   padding: 0%;
@@ -138,7 +133,7 @@ body{
   background-color: black;
   color: white;
   overflow-x: hidden;
-  font-family: 'myfonts', sans-serif;
+  font-family:  sans-serif;
 }
 
 section{
@@ -153,4 +148,15 @@ section{
   width: 94%;
   height: 100%;
   background-color: green;
+}
+
+.buttonstyle{
+  padding: 4px 20px;
+  cursor: pointer;
+}
+
+/* Outline Text Effect */
+.outline-text {
+  -webkit-text-stroke: 2px black;
+  color: transparent;
 }
