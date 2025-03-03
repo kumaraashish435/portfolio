@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaHome, FaInfoCircle, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
-import './Navbar.css'; // Import the CSS file
+import './navbar.css'; // Import the CSS file
 
 const Navbar = () => {
   const location = useLocation();
