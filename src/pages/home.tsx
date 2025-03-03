@@ -17,7 +17,7 @@ const projects = [
     description:
       "A dynamic dashboard to track sales, users, and inventory using React and Firebase.",
   },
-];  
+];
 const Home = () => {
   return (
     <>
@@ -44,7 +44,7 @@ const Home = () => {
         {/* Profile Image */}
         <div className="relative mt-10 w-48 h-48 md:w-60 md:h-60">
           <img
-            src="src/assets/bgpic.jpg"
+            src=".../assets/bgpic.jpg"
             alt="Profile"
             className="w-full h-full object-cover rounded-full border-4 border-black shadow-lg"
           />
