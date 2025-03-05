@@ -1,4 +1,3 @@
-
 .intro {
   width: 55%;
   height: 100%;
@@ -30,31 +29,124 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 10%;
+  padding: 100px 10%;
   background-color: #f9f9f9;
+  gap: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 .about-content {
   flex: 1;
+  max-width: 600px;
+}
+
+.about-header {
+  margin-bottom: 30px;
 }
 
 .section-title {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 800;
   margin-bottom: 15px;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.title-decoration {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #000000, #666666);
+  border-radius: 2px;
+}
+
+.about-text-container {
+  margin-bottom: 30px;
 }
 
 .about-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #444;
-  line-height: 1.6;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-.about-image img {
-  width: 300px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.skill-tag {
+  padding: 8px 16px;
+  background-color: #000;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+}
+
+.about-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0));
+  pointer-events: none;
+}
+
+.image-frame:hover .about-image {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  .image-frame {
+    max-width: 250px;
+  }
 }
 
 /* projects */
