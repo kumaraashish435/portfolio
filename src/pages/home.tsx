@@ -1,6 +1,6 @@
 import "./pagescss/home.css";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import bgpic from "../assets/bgpic.jpg";
+import bgpic from "@/assets/ab.jpg";
 
 const projects = [
   {
