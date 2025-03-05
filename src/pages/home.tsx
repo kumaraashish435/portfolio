@@ -1,6 +1,8 @@
 import "./pagescss/home.css";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import bgpic from "@/assets/ab.jpg";
+import bgpic from "../assets/download.jpg";
+import zpic from "../assets/Zaraki.jpg";
+
 
 const projects = [
   {
@@ -85,7 +87,7 @@ const Home = () => {
           </p>
         </div>
         <div className="about-image">
-          <img src={bgpic} alt="Aashish Kumar" />
+          <img src={zpic} alt="Aashish Kumar" />
         </div>
       </section>
       <section className="projects">
