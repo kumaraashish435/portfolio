@@ -1,2 +1,47 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --border-color: rgba(0, 0, 0, 0.7);
+}
+
+@layer base {
+  body {
+    @apply text-gray-700;
+  }
+}
+
+@layer components {
+  .animated-link {
+    @apply relative inline-block px-4 py-2 text-sm font-medium uppercase tracking-wider;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .animated-link .corner-border {
+    @apply absolute w-1/4 h-1/4 transition-all duration-500;
+  }
+
+  .animated-link .corner-border.top-left {
+    @apply top-0 left-0 border-t border-l;
+    border-color: var(--border-color);
+  }
+
+  .animated-link .corner-border.top-right {
+    @apply top-0 right-0 border-t border-r;
+    border-color: var(--border-color);
+  }
+
+  .animated-link .corner-border.bottom-right {
+    @apply bottom-0 right-0 border-b border-r;
+    border-color: var(--border-color);
+  }
+
+  .animated-link .corner-border.bottom-left {
+    @apply bottom-0 left-0 border-b border-l;
+    border-color: var(--border-color);
+  }
+}
+

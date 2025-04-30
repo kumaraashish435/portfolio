@@ -1,132 +1,55 @@
 const About = () => {
   return (
-    <section 
-      className="min-h-screen pt-20 pb-16"
-      style={{
-        background: 'linear-gradient(135deg, #F8F9FA 0%, #EDEFF2 100%)',
-        color: '#333'
-      }}
-    >
+    <section className="min-h-screen pt-20 pb-16 bg-gradient-to-br from-[#F8F9FA] to-[#EDEFF2] text-[#333]">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
-        <h2 
-          className="text-5xl font-bold text-center mb-12"
-          style={{
-            color: '#6B48FF',
-            textShadow: '2px 2px 4px rgba(0,0,0,0.1)',
-            fontFamily: "'Poppins', sans-serif"
-          }}
-        >
+        <h2 className="text-5xl font-bold text-center mb-12 text-[#6B48FF] text-shadow-sm font-['Poppins',sans-serif]">
           About Us
         </h2>
 
         {/* Main Content */}
-        <div 
-          className="grid md:grid-cols-2 gap-12 items-center"
-          style={{ maxWidth: '1200px', margin: '0 auto' }}
-        >
+        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Text Content */}
-          <div 
-            style={{
-              background: '#fff',
-              padding: '2.5rem',
-              borderRadius: '15px',
-              boxShadow: '0 6px 12px rgba(0,0,0,0.1)',
-              transition: 'transform 0.3s ease',
-              ':hover': { transform: 'translateY(-5px)' }
-            }}
-          >
-            <p 
-              className="text-lg leading-relaxed"
-              style={{ 
-                color: '#555',
-                lineHeight: '1.8',
-                fontFamily: "'Roboto', sans-serif"
-              }}
-            >
+          <div className="bg-white p-10 rounded-xl shadow-md hover:-translate-y-1 transition-transform duration-300">
+            <p className="text-lg leading-relaxed text-[#555] font-['Roboto',sans-serif]">
               We are a passionate team dedicated to building innovative and user-friendly websites. 
               With years of experience in web development and design, we aim to bring your vision to life 
               through clean code, modern design principles, and cutting-edge technology.
             </p>
-            <p 
-              className="text-lg leading-relaxed mt-4"
-              style={{ color: '#555' }}
-            >
+            <p className="text-lg leading-relaxed text-[#555] mt-4 font-['Roboto',sans-serif]">
               Our mission is to create digital experiences that not only look stunning but also 
               perform flawlessly, helping businesses and individuals achieve their goals in the 
               digital world.
             </p>
-            <button
-              style={{
-                marginTop: '2rem',
-                padding: '12px 30px',
-                background: '#6B48FF',
-                color: '#fff',
-                border: 'none',
-                borderRadius: '25px',
-                fontSize: '1.1rem',
-                fontWeight: 'bold',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-                ':hover': { 
-                  background: '#00DDEB',
-                  transform: 'scale(1.05)' 
-                }
-              }}
-            >
+            <button className="mt-8 px-8 py-3 bg-[#6B48FF] text-white rounded-full text-lg font-bold hover:bg-[#00DDEB] hover:scale-105 transition-all duration-300">
               Learn More
             </button>
           </div>
 
           {/* Decorative Element / Stats */}
-          <div 
-            style={{
-              background: 'rgba(107, 72, 255, 0.1)',
-              padding: '2.5rem',
-              borderRadius: '15px',
-              height: '100%'
-            }}
-          >
+          <div className="bg-[#6B48FF]/10 p-10 rounded-xl h-full">
             <div className="space-y-8">
               <div>
-                <h3 
-                  style={{ 
-                    color: '#00DDEB', 
-                    fontSize: '2.5rem',
-                    fontWeight: 'bold'
-                  }}
-                >
+                <h3 className="text-4xl font-bold text-[#00DDEB]">
                   5+
                 </h3>
-                <p style={{ color: '#6B48FF', fontSize: '1.2rem' }}>
+                <p className="text-[#6B48FF] text-lg">
                   Years of Experience
                 </p>
               </div>
               <div>
-                <h3 
-                  style={{ 
-                    color: '#00DDEB', 
-                    fontSize: '2.5rem',
-                    fontWeight: 'bold'
-                  }}
-                >
+                <h3 className="text-4xl font-bold text-[#00DDEB]">
                   50+
                 </h3>
-                <p style={{ color: '#6B48FF', fontSize: '1.2rem' }}>
+                <p className="text-[#6B48FF] text-lg">
                   Projects Completed
                 </p>
               </div>
               <div>
-                <h3 
-                  style={{ 
-                    color: '#00DDEB', 
-                    fontSize: '2.5rem',
-                    fontWeight: 'bold'
-                  }}
-                >
+                <h3 className="text-4xl font-bold text-[#00DDEB]">
                   100%
                 </h3>
-                <p style={{ color: '#6B48FF', fontSize: '1.2rem' }}>
+                <p className="text-[#6B48FF] text-lg">
                   Client Satisfaction
                 </p>
               </div>
