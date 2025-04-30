@@ -7,33 +7,29 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[100vh] flex flex-col md:flex-row items-center justify-center bg-offwhite overflow-hidden px-4 sm:px-12 py-12 border-b border-dark">
-        {/* Background Figures */}
+      <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-between bg-offwhite overflow-hidden px-4 sm:px-6 lg:px-8 pt-20 pb-12 md:py-20 border-b border-dark">
+        {/* Background Figures - Adjusted for better visibility on mobile */}
         <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
           {/* Large Circle - Top Right */}
-          <svg width="100%" height="100%" className="absolute top-[-10%] right-[-10%] opacity-10">
+          <svg width="100%" height="100%" className="absolute top-[-5%] right-[-5%] opacity-10 scale-75 sm:scale-100">
             <circle cx="70%" cy="30%" r="300" fill="#0197F6" />
           </svg>
           
           {/* Small Circles - Bottom Left */}
-          <svg width="100%" height="100%" className="absolute bottom-[-5%] left-[-5%] opacity-10">
+          <svg width="100%" height="100%" className="absolute bottom-[-2%] left-[-2%] opacity-10 scale-75 sm:scale-100">
             <circle cx="20%" cy="70%" r="200" fill="#D7263D" />
             <circle cx="40%" cy="80%" r="150" fill="#448FA3" />
           </svg>
           
           {/* Gradient Blobs */}
-          <div className="absolute top-[-20%] right-[-20%] w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-[-20%] left-[-20%] w-[600px] h-[600px] bg-blue/5 rounded-full blur-3xl" />
+          <div className="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] bg-primary/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] bg-blue/5 rounded-full blur-3xl" />
           
           {/* Decorative Lines */}
           <svg width="100%" height="100%" className="absolute top-0 left-0 opacity-5">
-            <line x1="5%" y1="15%" x2="95%" y2="15%" stroke="#02182B" strokeWidth="2" />
-            <line x1="5%" y1="85%" x2="95%" y2="85%" stroke="#02182B" strokeWidth="2" />
+            <line x1="5%" y1="15%" x2="95%" y2="15%" stroke="#02182B" strokeWidth="1" />
+            <line x1="5%" y1="85%" x2="95%" y2="85%" stroke="#02182B" strokeWidth="1" />
           </svg>
-
-          {/* Additional Decorative Elements */}
-          <div className="absolute top-[30%] left-[10%] w-[100px] h-[100px] bg-primary/5 rounded-full blur-xl" />
-          <div className="absolute bottom-[30%] right-[10%] w-[150px] h-[150px] bg-blue/5 rounded-full blur-xl" />
         </div>
 
         {/* Left: Main Info */}
@@ -41,77 +37,77 @@ const Home = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex-1 flex flex-col items-start justify-center z-10 pl-12 max-w-xl pr-8 md:pr-4 lg:pr-0"
+          className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center z-10 px-4 sm:px-6 md:pl-8 lg:pl-12 text-center md:text-left mb-12 md:mb-0"
         >
-          <div className="space-y-2">
-            <h1 className="text-5xl md:text-7xl font-extrabold text-navy leading-tight">
+          <div className="space-y-2 sm:space-y-3">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-navy leading-tight">
               Kumar <span className="text-primary font-light">Aashish</span>
             </h1>
-            <p className="text-teal text-xl md:text-2xl font-medium">Full Stack Developer</p>
+            <p className="text-teal text-base sm:text-lg md:text-xl lg:text-2xl font-medium">Full Stack Developer</p>
           </div>
           
-          <p className="text-dark text-lg my-4  md:text-xl leading-relaxed max-w-lg">
+          <p className="text-dark text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-lg mt-4 sm:mt-6">
             Passionate developer crafting seamless digital experiences. Specializing in React, TypeScript, and UI/UX design. Always learning, always building.
           </p>
 
-          <div className="flex my-10 gap-4">
+          <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 mt-6 sm:mt-8 md:mt-10">
             <Magnetic>
-              <button className="bg-primary mr-4 text-offwhite px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-navy transition-all duration-300 hover:shadow-xl">
+              <button className="bg-primary text-offwhite px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg font-semibold shadow-lg hover:bg-navy transition-all duration-300 hover:shadow-xl text-xs sm:text-sm md:text-base">
                 Download CV
               </button>
             </Magnetic>
             <Magnetic>
-              <button className="bg-white border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-lightblue hover:text-navy transition-all duration-300">
+              <button className="bg-white border-2 border-primary text-primary px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 rounded-lg font-semibold hover:bg-lightblue hover:text-navy transition-all duration-300 text-xs sm:text-sm md:text-base">
                 Contact
               </button>
             </Magnetic>
           </div>
 
-          <div className="flex gap-8 my-10 text-sm mt-4">
-            <div className="flex flex-col">
-              <span className="text-blue font-medium">Experience</span>
-              <span className="text-navy font-semibold">5+ Years</span>
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-8 md:mt-10">
+            <div className="flex flex-col items-center md:items-start">
+              <span className="text-blue font-medium text-xs sm:text-sm md:text-base">Experience</span>
+              <span className="text-navy font-semibold text-sm sm:text-base md:text-lg">5+ Years</span>
             </div>
-            <div className="flex flex-col">
-              <span className="text-blue font-medium">Specialty</span>
-              <span className="text-navy font-semibold">UI/UX</span>
+            <div className="flex flex-col items-center md:items-start">
+              <span className="text-blue font-medium text-xs sm:text-sm md:text-base">Specialty</span>
+              <span className="text-navy font-semibold text-sm sm:text-base md:text-lg">UI/UX</span>
             </div>
-            <div className="flex flex-col">
-              <span className="text-blue font-medium">Stack</span>
-              <span className="text-navy font-semibold">React/TS</span>
+            <div className="flex flex-col items-center md:items-start">
+              <span className="text-blue font-medium text-xs sm:text-sm md:text-base">Stack</span>
+              <span className="text-navy font-semibold text-sm sm:text-base md:text-lg">React/TS</span>
             </div>
           </div>
 
-          <div className="flex gap-6 mt-4">
+          <div className="flex gap-4 sm:gap-6 mt-6 sm:mt-8 md:mt-10">
             <Magnetic>
-              <a href="#" className="text-navy hover:text-primary transition-colors duration-300">
-                <FiGithub className="w-6 h-6" />
+              <a href="#" className="text-navy sm:hover:text-primary transition-colors duration-300">
+                <FiGithub className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
               </a>
             </Magnetic>
             <Magnetic>
-              <a href="#" className="text-navy hover:text-primary transition-colors duration-300">
-                <FiLinkedin className="w-6 h-6" />
+              <a href="#" className="text-navy sm:hover:text-primary transition-colors duration-300">
+                <FiLinkedin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
               </a>
             </Magnetic>
             <Magnetic>
-              <a href="#" className="text-navy hover:text-primary transition-colors duration-300">
-                <FiTwitter className="w-6 h-6" />
+              <a href="#" className="text-navy sm:hover:text-primary transition-colors duration-300">
+                <FiTwitter className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
               </a>
             </Magnetic>
           </div>
         </motion.div>
 
         {/* Right: Image and Vertical Text */}
-        <div className="flex-1 flex items-center justify-center mt-10 md:mt-0 z-10 relative">
+        <div className="w-full md:w-1/2 flex items-center justify-center z-10 relative">
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="relative flex items-center justify-center"
           >
-            <div className="w-[400px] h-[500px] bg-gradient-to-br from-lightblue to-blue rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden border-2 border-blue relative">
+            <div className="w-[240px] h-[300px] xs:w-[280px] xs:h-[350px] sm:w-[320px] sm:h-[400px] md:w-[340px] md:h-[425px] lg:w-[380px] lg:h-[475px] xl:w-[400px] xl:h-[500px] bg-gradient-to-br from-lightblue to-blue rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden border-2 border-blue relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-blue/20 mix-blend-overlay" />
-              <span className="text-navy text-xl text-center font-medium">IMAGE<br/>400x500</span>
+              <span className="text-navy text-sm sm:text-base md:text-lg lg:text-xl text-center font-medium">IMAGE<br/>PLACEHOLDER</span>
             </div>
 
             {/* Vertical Text */}
@@ -119,9 +115,9 @@ const Home = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="absolute right-[-80px] top-1/2 -translate-y-1/2 flex flex-col items-center"
+              className="absolute right-[-30px] xs:right-[-35px] sm:right-[-45px] md:right-[-55px] lg:right-[-65px] xl:right-[-80px] top-1/2 -translate-y-1/2 flex flex-col items-center"
             >
-              <div className="flex flex-col items-center gap-[0.8em] text-navy text-lg tracking-[0.2em] font-medium">
+              <div className="flex flex-col items-center gap-[0.4em] xs:gap-[0.5em] sm:gap-[0.6em] md:gap-[0.7em] lg:gap-[0.8em] text-navy text-xs xs:text-sm sm:text-base md:text-lg tracking-[0.1em] xs:tracking-[0.12em] sm:tracking-[0.15em] md:tracking-[0.2em] font-medium">
                 <span>T</span>
                 <span>H</span>
                 <span>R</span>
@@ -129,7 +125,7 @@ const Home = () => {
                 <span>U</span>
                 <span>G</span>
                 <span>H</span>
-                <span className="my-[0.5em]">•</span>
+                <span className="my-[0.3em] xs:my-[0.35em] sm:my-[0.4em] md:my-[0.45em] lg:my-[0.5em]">•</span>
                 <span>C</span>
                 <span>O</span>
                 <span>D</span>
