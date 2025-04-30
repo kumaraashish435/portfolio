@@ -1,60 +1,102 @@
+import { motion } from "framer-motion";
+import { FiCode, FiLayers, FiCpu, FiDatabase } from "react-icons/fi";
+
 const About = () => {
+  const skills = [
+    {
+      icon: <FiCode className="w-6 h-6" />,
+      title: "Frontend Development",
+      description: "React, TypeScript, Next.js, Tailwind CSS",
+    },
+    {
+      icon: <FiLayers className="w-6 h-6" />,
+      title: "UI/UX Design",
+      description: "Figma, Adobe XD, Responsive Design",
+    },
+    {
+      icon: <FiCpu className="w-6 h-6" />,
+      title: "Backend Development",
+      description: "Node.js, Express, Python, Django",
+    },
+    {
+      icon: <FiDatabase className="w-6 h-6" />,
+      title: "Database",
+      description: "MongoDB, PostgreSQL, Firebase",
+    },
+  ];
+
   return (
-    <section className="min-h-screen pt-20 pb-16 bg-gradient-to-br from-[#F8F9FA] to-[#EDEFF2] text-[#333]">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Heading */}
-        <h2 className="text-5xl font-bold text-center mb-12 text-[#6B48FF] text-shadow-sm font-['Poppins',sans-serif]">
-          About Us
-        </h2>
+    <section className="min-h-screen bg-offwhite py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-12 md:mb-16"
+        >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-4">
+            About Me
+          </h1>
+          <p className="text-dark text-lg md:text-xl max-w-3xl mx-auto">
+            Passionate developer with a focus on creating beautiful, functional web applications.
+          </p>
+        </motion.div>
 
-        {/* Main Content */}
-        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          {/* Text Content */}
-          <div className="bg-white p-10 rounded-xl shadow-md hover:-translate-y-1 transition-transform duration-300">
-            <p className="text-lg leading-relaxed text-[#555] font-['Roboto',sans-serif]">
-              We are a passionate team dedicated to building innovative and user-friendly websites. 
-              With years of experience in web development and design, we aim to bring your vision to life 
-              through clean code, modern design principles, and cutting-edge technology.
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          {/* Left Column - Bio */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="space-y-6"
+          >
+            <h2 className="text-2xl md:text-3xl font-semibold text-navy">
+              Who am I?
+            </h2>
+            <p className="text-dark text-base md:text-lg leading-relaxed">
+              I'm a Full Stack Developer with over 5 years of experience in building
+              modern web applications. My journey in web development started with a
+              passion for creating beautiful and functional user interfaces.
             </p>
-            <p className="text-lg leading-relaxed text-[#555] mt-4 font-['Roboto',sans-serif]">
-              Our mission is to create digital experiences that not only look stunning but also 
-              perform flawlessly, helping businesses and individuals achieve their goals in the 
-              digital world.
+            <p className="text-dark text-base md:text-lg leading-relaxed">
+              I specialize in React, TypeScript, and modern web technologies,
+              focusing on creating seamless user experiences and scalable
+              applications.
             </p>
-            <button className="mt-8 px-8 py-3 bg-[#6B48FF] text-white rounded-full text-lg font-bold hover:bg-[#00DDEB] hover:scale-105 transition-all duration-300">
-              Learn More
-            </button>
-          </div>
+          </motion.div>
 
-          {/* Decorative Element / Stats */}
-          <div className="bg-[#6B48FF]/10 p-10 rounded-xl h-full">
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-4xl font-bold text-[#00DDEB]">
-                  5+
-                </h3>
-                <p className="text-[#6B48FF] text-lg">
-                  Years of Experience
-                </p>
-              </div>
-              <div>
-                <h3 className="text-4xl font-bold text-[#00DDEB]">
-                  50+
-                </h3>
-                <p className="text-[#6B48FF] text-lg">
-                  Projects Completed
-                </p>
-              </div>
-              <div>
-                <h3 className="text-4xl font-bold text-[#00DDEB]">
-                  100%
-                </h3>
-                <p className="text-[#6B48FF] text-lg">
-                  Client Satisfaction
-                </p>
-              </div>
+          {/* Right Column - Skills */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="space-y-6"
+          >
+            <h2 className="text-2xl md:text-3xl font-semibold text-navy">
+              My Skills
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {skills.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+                  className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div className="flex items-center space-x-3 mb-2">
+                    <div className="text-primary">{skill.icon}</div>
+                    <h3 className="text-lg font-medium text-navy">
+                      {skill.title}
+                    </h3>
+                  </div>
+                  <p className="text-dark text-sm md:text-base">
+                    {skill.description}
+                  </p>
+                </motion.div>
+              ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
