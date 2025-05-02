@@ -80,17 +80,17 @@ const Home = () => {
 
           <div className="flex gap-4 sm:gap-6 mt-6 sm:mt-8 md:mt-10">
             <Magnetic>
-              <a href="#" className="text-navy sm:hover:text-primary transition-colors duration-300">
+              <a href="https://github.com/kumaraashish435" className="text-navy sm:hover:text-primary transition-colors duration-300">
                 <FiGithub className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
               </a>
             </Magnetic>
             <Magnetic>
-              <a href="#" className="text-navy sm:hover:text-primary transition-colors duration-300">
+              <a href="https://www.linkedin.com/in/kumar-aashish-98b18323b/" className="text-navy sm:hover:text-primary transition-colors duration-300">
                 <FiLinkedin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
               </a>
             </Magnetic>
             <Magnetic>
-              <a href="#" className="text-navy sm:hover:text-primary transition-colors duration-300">
+              <a href="https://x.com/1kumar___0005?t=gOK4E5GlVbJIjJUtMIQUFA&s=09" className="text-navy sm:hover:text-primary transition-colors duration-300">
                 <FiTwitter className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
               </a>
             </Magnetic>

@@ -48,13 +48,13 @@ const Footer = () => {
                 className="flex items-center text-dark sm:hover:text-primary transition-colors duration-300 text-sm md:text-base"
               >
                 <FiMail className="mr-2" />
-                your.email@example.com
+                kumaraashishcr435@gmail.com
               </a>
             </div>
             <div className="flex space-x-4 pt-2">
               <Magnetic>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/kumaraashish435"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-dark sm:hover:text-primary transition-colors duration-300"
@@ -64,7 +64,7 @@ const Footer = () => {
               </Magnetic>
               <Magnetic>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/kumar-aashish-98b18323b/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-dark sm:hover:text-primary transition-colors duration-300"
@@ -74,7 +74,7 @@ const Footer = () => {
               </Magnetic>
               <Magnetic>
                 <a
-                  href="https://twitter.com/yourusername"
+                  href="https://x.com/1kumar___0005?t=gOK4E5GlVbJIjJUtMIQUFA&s=09"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-dark sm:hover:text-primary transition-colors duration-300"
