@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiCode, FiLayers, FiCpu, FiDatabase } from "react-icons/fi";
+import { FiCode, FiLayers, FiCpu, FiDatabase, FiCloud } from "react-icons/fi";
 
 const About = () => {
   const skills = [
@@ -16,12 +16,22 @@ const About = () => {
     {
       icon: <FiCpu className="w-6 h-6" />,
       title: "Backend Development",
-      description: "Node.js, Express, Python, Django",
+      description: "Node.js, Express, Python, Django, C#, C++",
     },
     {
       icon: <FiDatabase className="w-6 h-6" />,
       title: "Database",
-      description: "MongoDB, PostgreSQL, Firebase",
+      description: "MongoDB, PostgreSQL, Firebase, SQL Server",
+    },
+    {
+      icon: <FiCloud className="w-6 h-6" />,
+      title: "Cloud & Data Engineering",
+      description: "SAP BW, DataSphere Cloud, AWS, Azure",
+    },
+    {
+      icon: <FiCode className="w-6 h-6" />,
+      title: "Software Development",
+      description: ".NET, Visual Studio, C#, C++, Visual Studio Code",
     },
   ];
 
@@ -54,14 +64,17 @@ const About = () => {
               Who am I?
             </h2>
             <p className="text-dark text-base md:text-lg leading-relaxed">
-              I'm a Full Stack Developer with over 5 years of experience in building
-              modern web applications. My journey in web development started with a
-              passion for creating beautiful and functional user interfaces.
+            I’m Aashish Kumar, a passionate Software Engineer with a strong 
+            focus on C#, C++, and .NET development. Currently working at HCL 
+            Technologies, I specialize in building scalable enterprise solutions 
+            and cloud-based applications. My experience spans across various technologies, 
+            including SAP BW, SQL Server, and Tableau, where I design data-driven solutions 
+            and enhance business intelligence.
             </p>
             <p className="text-dark text-base md:text-lg leading-relaxed">
-              I specialize in React, TypeScript, and modern web technologies,
-              focusing on creating seamless user experiences and scalable
-              applications.
+            I thrive on solving complex problems, whether it’s through developing robust 
+            backend systems, automating workflows, or integrating AI into applications. 
+            I’m always driven by a passion for clean, maintainable code that delivers real-world impact
             </p>
           </motion.div>
 
