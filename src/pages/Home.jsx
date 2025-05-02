@@ -14,17 +14,17 @@ const Home = () => {
           <svg width="100%" height="100%" className="absolute top-[-5%] right-[-5%] opacity-10 scale-75 sm:scale-100">
             <circle cx="70%" cy="30%" r="300" fill="#0197F6" />
           </svg>
-          
+
           {/* Small Circles - Bottom Left */}
           <svg width="100%" height="100%" className="absolute bottom-[-2%] left-[-2%] opacity-10 scale-75 sm:scale-100">
             <circle cx="20%" cy="70%" r="200" fill="#D7263D" />
             <circle cx="40%" cy="80%" r="150" fill="#448FA3" />
           </svg>
-          
+
           {/* Gradient Blobs */}
           <div className="absolute top-[-10%] right-[-10%] w-[400px] h-[400px] sm:w-[600px] sm:h-[600px] md:w-[800px] md:h-[800px] bg-primary/5 rounded-full blur-3xl" />
           <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] bg-blue/5 rounded-full blur-3xl" />
-          
+
           {/* Decorative Lines */}
           <svg width="100%" height="100%" className="absolute top-0 left-0 opacity-5">
             <line x1="5%" y1="15%" x2="95%" y2="15%" stroke="#02182B" strokeWidth="1" />
@@ -33,7 +33,7 @@ const Home = () => {
         </div>
 
         {/* Left: Main Info */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -43,11 +43,11 @@ const Home = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-navy leading-tight">
               Kumar <span className="text-primary font-light">Aashish</span>
             </h1>
-            <p className="text-teal text-base sm:text-lg md:text-xl lg:text-2xl font-medium">Full Stack Developer</p>
+            <p className="text-teal font-serif text-base sm:text-lg md:text-xl lg:text-2xl font-medium">Software Engineer</p>
           </div>
-          
+
           <p className="text-dark text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-lg mt-4 sm:mt-6">
-            Passionate developer crafting seamless digital experiences. Specializing in React, TypeScript, and UI/UX design. Always learning, always building.
+          Passionate Software Engineer skilled in C#, C++, and .NET. I work with enterprise systems, cloud platforms, and tools like SAP BW, SQL Server, and Tableau. I love to code and solve real problems.
           </p>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 mt-6 sm:mt-8 md:mt-10">
@@ -99,7 +99,7 @@ const Home = () => {
 
         {/* Right: Image and Vertical Text */}
         <div className="w-full md:w-1/2 flex items-center justify-center z-10 relative">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -107,11 +107,15 @@ const Home = () => {
           >
             <div className="w-[240px] h-[300px] xs:w-[280px] xs:h-[350px] sm:w-[320px] sm:h-[400px] md:w-[340px] md:h-[425px] lg:w-[380px] lg:h-[475px] xl:w-[400px] xl:h-[500px] bg-gradient-to-br from-lightblue to-blue rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden border-2 border-blue relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-blue/20 mix-blend-overlay" />
-              <span className="text-navy text-sm sm:text-base md:text-lg lg:text-xl text-center font-medium">IMAGE<br/>PLACEHOLDER</span>
+              <img
+                src="https://i.pinimg.com/736x/6b/67/a1/6b67a1afc2ae7970e95b6972c28f2a35.jpg"
+                alt=""
+                className="w-full h-full object-cover object-center"
+              />
             </div>
 
             {/* Vertical Text */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -153,9 +157,9 @@ const Home = () => {
           </h2>
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
             <p className="text-lg leading-relaxed text-[#555]">
-              I'm a dedicated developer with 5+ years of experience in creating 
-              beautiful, functional web applications. Specializing in React, 
-              TypeScript, and UI/UX design, I transform ideas into seamless 
+              I'm a dedicated developer with 5+ years of experience in creating
+              beautiful, functional web applications. Specializing in React,
+              TypeScript, and UI/UX design, I transform ideas into seamless
               digital experiences.
             </p>
           </div>
@@ -175,7 +179,7 @@ const Home = () => {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <motion.div 
+            <motion.div
               whileHover={{ y: -10 }}
               className="bg-[#F8F9FA] p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
@@ -184,7 +188,7 @@ const Home = () => {
                 A modern web app with real-time features built using React and Firebase
               </p>
             </motion.div>
-            <motion.div 
+            <motion.div
               whileHover={{ y: -10 }}
               className="bg-[#F8F9FA] p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
@@ -193,7 +197,7 @@ const Home = () => {
                 E-commerce platform with custom CMS and payment integration
               </p>
             </motion.div>
-            <motion.div 
+            <motion.div
               whileHover={{ y: -10 }}
               className="bg-[#F8F9FA] p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >

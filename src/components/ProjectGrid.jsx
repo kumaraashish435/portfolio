@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Minimal Blog",
     description: "A clean, minimal blog platform with markdown support and beautiful typography.",
-    image: "https://source.unsplash.com/400x300/?minimal,design",
+    image: "https://i.pinimg.com/736x/6b/67/a1/6b67a1afc2ae7970e95b6972c28f2a35.jpg",
     tags: ["Next.js", "Tailwind", "Content"],
     link: "#"
   },
