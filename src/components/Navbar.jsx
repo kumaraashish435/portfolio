@@ -32,10 +32,11 @@ const Navbar = () => {
         isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" w-[94%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
+          <Link to="/" className="flex gap-2 flex-shrink-0">
+             <img className=" w-8 h-8" src="/_.jpeg" alt="logo" />
             <AnimatedLogo onClick={() => navigate('/')} />
           </Link>
 
@@ -45,7 +46,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors duration-300 ${
+                className={`text-[18px] font-medium transition-colors duration-300 ${
                   location.pathname === link.path
                     ? "text-primary"
                     : "text-dark sm:hover:text-primary"
