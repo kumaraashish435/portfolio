@@ -10,10 +10,10 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <Link to="/" className="inline-block">
-              <span className="text-2xl font-bold text-navy">Kumar Aashish</span>
+              <span className="text-2xl font-bold text-navy">Aashish Kumar</span>
             </Link>
             <p className="text-dark text-sm md:text-base max-w-md">
-              Full Stack Developer crafting seamless digital experiences with React, TypeScript, and modern web technologies.
+              Software Developer at HCL Technologies specializing in C#, .NET, and enterprise solutions. Based in Nahan, Himachal Pradesh.
             </p>
           </div>
 
@@ -44,11 +44,18 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-navy">Get in Touch</h3>
             <div className="flex flex-col space-y-2">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:kumaraashish56712@gmail.com"
                 className="flex items-center text-dark sm:hover:text-primary transition-colors duration-300 text-sm md:text-base"
               >
                 <FiMail className="mr-2" />
-                kumaraashishcr435@gmail.com
+                kumaraashish56712@gmail.com
+              </a>
+              <a
+                href="tel:+919736782785"
+                className="flex items-center text-dark sm:hover:text-primary transition-colors duration-300 text-sm md:text-base"
+              >
+                <FiMail className="mr-2" />
+                +91 9736782785
               </a>
             </div>
             <div className="flex space-x-4 pt-2">

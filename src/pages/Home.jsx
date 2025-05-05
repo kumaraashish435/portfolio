@@ -41,13 +41,13 @@ const Home = () => {
         >
           <div className="space-y-2 sm:space-y-3">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-navy leading-tight">
-              Kumar <span className="text-primary font-light">Aashish</span>
+              Aashish <span className="text-primary font-light">Kumar</span>
             </h1>
-            <p className="text-teal font-serif text-base sm:text-lg md:text-xl lg:text-2xl font-medium">Software Engineer</p>
+            <p className="text-teal font-serif text-base sm:text-lg md:text-xl lg:text-2xl font-medium">Software Developer</p>
           </div>
 
           <p className="text-dark text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-lg mt-4 sm:mt-6">
-          Passionate Software Engineer skilled in C#, C++, and .NET. I work with enterprise systems, cloud platforms, and tools like SAP BW, SQL Server, and Tableau. I love to code and solve real problems.
+            Software Developer at HCL Technologies specializing in C#, .NET, and enterprise solutions. Experienced in SAP DataSphere, S/4HANA Migration, and cloud platforms. Based in Nahan, Himachal Pradesh.
           </p>
 
           <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4 mt-6 sm:mt-8 md:mt-10">
@@ -66,15 +66,15 @@ const Home = () => {
           <div className="flex flex-wrap justify-center md:justify-start gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-8 md:mt-10">
             <div className="flex flex-col items-center md:items-start">
               <span className="text-blue font-medium text-xs sm:text-sm md:text-base">Experience</span>
-              <span className="text-navy font-semibold text-sm sm:text-base md:text-lg">5+ Years</span>
+              <span className="text-navy font-semibold text-sm sm:text-base md:text-lg">2+ Year</span>
             </div>
             <div className="flex flex-col items-center md:items-start">
               <span className="text-blue font-medium text-xs sm:text-sm md:text-base">Specialty</span>
-              <span className="text-navy font-semibold text-sm sm:text-base md:text-lg">UI/UX</span>
+              <span className="text-navy font-semibold text-sm sm:text-base md:text-lg">Enterprise Solutions</span>
             </div>
             <div className="flex flex-col items-center md:items-start">
               <span className="text-blue font-medium text-xs sm:text-sm md:text-base">Stack</span>
-              <span className="text-navy font-semibold text-sm sm:text-base md:text-lg">React/TS</span>
+              <span className="text-navy font-semibold text-sm sm:text-base md:text-lg">C#/.NET</span>
             </div>
           </div>
 
@@ -157,10 +157,7 @@ const Home = () => {
           </h2>
           <div className="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
             <p className="text-lg leading-relaxed text-[#555]">
-              I'm a dedicated developer with 5+ years of experience in creating
-              beautiful, functional web applications. Specializing in React,
-              TypeScript, and UI/UX design, I transform ideas into seamless
-              digital experiences.
+              I'm a Software Developer at HCL Technologies with expertise in enterprise solutions and cloud platforms. I specialize in C#, .NET, SAP DataSphere, and S/4HANA Migration. With a strong foundation in computer applications and certifications in Microsoft Azure, I'm passionate about building scalable solutions and integrating AI into enterprise applications.
             </p>
           </div>
         </motion.div>
@@ -183,27 +180,27 @@ const Home = () => {
               whileHover={{ y: -10 }}
               className="bg-[#F8F9FA] p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <h3 className="text-2xl text-[#00DDEB] mb-4 font-semibold">Project 1</h3>
+              <h3 className="text-2xl text-[#00DDEB] mb-4 font-semibold">AutoPilotPM</h3>
               <p className="text-[#666] leading-relaxed">
-                A modern web app with real-time features built using React and Firebase
+                AI-powered virtual project manager with React frontend and Node.js backend. Features include AI code generation, project templates, and real-time collaboration.
               </p>
             </motion.div>
             <motion.div
               whileHover={{ y: -10 }}
               className="bg-[#F8F9FA] p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <h3 className="text-2xl text-[#00DDEB] mb-4 font-semibold">Project 2</h3>
+              <h3 className="text-2xl text-[#00DDEB] mb-4 font-semibold">Uber_MoonshotLLM</h3>
               <p className="text-[#666] leading-relaxed">
-                E-commerce platform with custom CMS and payment integration
+                Prompt engineering project focusing on C# code reviews for cloud/container apps. Collaborated with AI engineering teams to optimize prompt usage in DevOps tools.
               </p>
             </motion.div>
             <motion.div
               whileHover={{ y: -10 }}
               className="bg-[#F8F9FA] p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <h3 className="text-2xl text-[#00DDEB] mb-4 font-semibold">Project 3</h3>
+              <h3 className="text-2xl text-[#00DDEB] mb-4 font-semibold">S/4HANA Migration</h3>
               <p className="text-[#666] leading-relaxed">
-                Portfolio website with modern design and smooth animations
+                Enterprise project involving migration to SAP S/4HANA, addressing issues during transition and ensuring smooth system integration.
               </p>
             </motion.div>
           </div>

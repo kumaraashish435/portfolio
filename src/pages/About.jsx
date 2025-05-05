@@ -1,37 +1,37 @@
 import { motion } from "framer-motion";
-import { FiCode, FiLayers, FiCpu, FiDatabase, FiCloud } from "react-icons/fi";
+import { FiCode, FiLayers, FiCpu, FiDatabase, FiCloud, FiBook, FiBriefcase } from "react-icons/fi";
 
 const About = () => {
   const skills = [
     {
       icon: <FiCode className="w-6 h-6" />,
-      title: "Frontend Development",
-      description: "React, TypeScript, Next.js, Tailwind CSS",
+      title: "Programming Languages",
+      description: "C#, C++, Python, HTML, CSS, JavaScript",
     },
     {
       icon: <FiLayers className="w-6 h-6" />,
-      title: "UI/UX Design",
-      description: "Figma, Adobe XD, Responsive Design",
+      title: "Frameworks & Platforms",
+      description: "ASP.NET, .NET Core, SAP DataSphere, React, Nodejs",
     },
     {
       icon: <FiCpu className="w-6 h-6" />,
-      title: "Backend Development",
-      description: "Node.js, Express, Python, Django, C#, C++",
+      title: "Development Tools",
+      description: "Visual Studio, VS Code, Tableau, Git",
     },
     {
       icon: <FiDatabase className="w-6 h-6" />,
-      title: "Database",
-      description: "MongoDB, PostgreSQL, Firebase, SQL Server",
+      title: "Databases",
+      description: "Microsoft SQL Server, PostgreSQL",
     },
     {
       icon: <FiCloud className="w-6 h-6" />,
-      title: "Cloud & Data Engineering",
-      description: "SAP BW, DataSphere Cloud, AWS, Azure",
+      title: "Cloud & Certifications",
+      description: "Microsoft Azure (Fundamentals, Data Fundamentals)",
     },
     {
-      icon: <FiCode className="w-6 h-6" />,
-      title: "Software Development",
-      description: ".NET, Visual Studio, C#, C++, Visual Studio Code",
+      icon: <FiLayers className="w-6 h-6" />,
+      title: "Soft Skills",
+      description: "Problem-Solving, Collaboration, Documentation, Prompt Engineering, Quick Learning",
     },
   ];
 
@@ -48,7 +48,7 @@ const About = () => {
             About Me
           </h1>
           <p className="text-dark text-lg md:text-xl max-w-3xl mx-auto">
-            Passionate developer with a focus on creating beautiful, functional web applications.
+            Software Developer at HCL Technologies with expertise in enterprise solutions and cloud platforms.
           </p>
         </motion.div>
 
@@ -64,18 +64,31 @@ const About = () => {
               Who am I?
             </h2>
             <p className="text-dark text-base md:text-lg leading-relaxed">
-            I’m Aashish Kumar, a passionate Software Engineer with a strong 
-            focus on C#, C++, and .NET development. Currently working at HCL 
-            Technologies, I specialize in building scalable enterprise solutions 
-            and cloud-based applications. My experience spans across various technologies, 
-            including SAP BW, SQL Server, and Tableau, where I design data-driven solutions 
-            and enhance business intelligence.
+              I'm Aashish Kumar, a Software Developer at HCL Technologies with a Bachelor's degree in Computer Applications from Amity University. Based in Nahan, Himachal Pradesh, I specialize in building enterprise solutions using C#, .NET, and cloud platforms.
             </p>
             <p className="text-dark text-base md:text-lg leading-relaxed">
-            I thrive on solving complex problems, whether it’s through developing robust 
-            backend systems, automating workflows, or integrating AI into applications. 
-            I’m always driven by a passion for clean, maintainable code that delivers real-world impact
+              My expertise spans across SAP DataSphere, S/4HANA Migration, and enterprise documentation. I've worked extensively with SQL Server, Oracle databases, and Tableau for data visualization. I'm also experienced in prompt engineering and AI integration in DevOps tools.
             </p>
+
+            <div className="space-y-4">
+              <div className="flex items-start space-x-4">
+                <FiBook className="w-6 h-6 text-primary mt-1" />
+                <div>
+                  <h3 className="text-lg font-semibold text-navy">Education</h3>
+                  <p className="text-dark">Amity University – Bachelor of Computer Applications (BCA)</p>
+                  <p className="text-dark text-sm">Completed: 2022</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <FiBriefcase className="w-6 h-6 text-primary mt-1" />
+                <div>
+                  <h3 className="text-lg font-semibold text-navy">Work Experience</h3>
+                  <p className="text-dark">Software Developer — HCL Technologies</p>
+                  <p className="text-dark text-sm">March 2023 – Present</p>
+                </div>
+              </div>
+            </div>
           </motion.div>
 
           {/* Right Column - Skills */}

@@ -80,7 +80,7 @@ const Contact = () => {
                 href="mailto:your.email@example.com"
                 className="flex items-center text-dark sm:hover:text-primary transition-colors duration-300"
               >
-                your.email@example.com
+                kumaraashish56712@gmail.com
               </a>
             </p>
           </motion.div>
