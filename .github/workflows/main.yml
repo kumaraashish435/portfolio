@@ -1,0 +1,15 @@
+name: first Action
+
+on: workflow_dispatch
+
+jobs:
+ Buld:
+  runs-on: ubuntu-latest
+  steps:
+    - name:
+      run: |
+       echo "hello world"
+      
+    
+    
+  
