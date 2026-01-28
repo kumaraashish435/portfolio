@@ -6,9 +6,20 @@ jobs:
  Buld:
   runs-on: ubuntu-latest
   steps:
-    - name:
+    - name: print hello
       run: |
        echo "hello world"
+
+    - name: checkout
+      uses: actions/checkout@v6.0.2
+
+    - name: Execute Typescript Script(esm)
+      uses: aliuq/script-action@v1.0.5
+
+    - name: Build
+      uses: alexthemaster/action-build-typescript@v1.3.1
+
+      
       
     
     
