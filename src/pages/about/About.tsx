@@ -1,4 +1,4 @@
-import { Calendar, Briefcase, Award, GraduationCap, Youtube, Code, Terminal, Brain } from "lucide-react";
+import { Briefcase, GraduationCap, Award, Youtube, Brain } from "lucide-react";
 import { Reveal } from "../../components/ui/Reveal";
 import { Section } from "../../components/ui/Section";
 import { Card } from "../../components/ui/Card";

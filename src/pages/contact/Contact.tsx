@@ -127,7 +127,7 @@ function Contact() {
                     />
                   </div>
                   
-                  <Button glow className="w-full rounded-xl py-4 text-lg font-medium group">
+                  <Button className="w-full rounded-xl py-4 text-lg font-medium group">
                     Send Message <Send size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </form>

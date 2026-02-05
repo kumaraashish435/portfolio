@@ -1,4 +1,4 @@
-import { ArrowRight, Code, Database, Layout, Server, Terminal, Cpu, Globe } from "lucide-react";
+import { ArrowRight, Code, Database, Layout, Terminal, Cpu, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Reveal } from "../../components/ui/Reveal";
 import { Button } from "../../components/ui/Button";
@@ -165,7 +165,7 @@ function Home() {
           </Reveal>
           <Reveal delay={0.5}>
             <Link to="/contact">
-              <Button size="lg" glow className="px-12 py-6 text-xl rounded-full">
+              <Button size="lg" className="px-12 py-6 text-xl rounded-full">
                 Get in Touch
               </Button>
             </Link>
