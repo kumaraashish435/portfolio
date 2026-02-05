@@ -1,45 +1,51 @@
-import "./footer.css";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 function Footer() {
   return (
-    <section className="w-full h-[50vh] bg-red-500 flex flex-col  justify-center   text-white py-6">
-      <div className=" bg-amber-900 flex justify-around">
-        <div>
-          <h1>Services</h1>
+    <footer className="w-full bg-neutral-900 text-gray-300 py-12 border-t border-neutral-800">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="text-center md:text-left">
+            <h2 className="text-2xl font-[Coolvetica] text-white mb-2">KUMAR AASHISH</h2>
+            <p className="text-sm text-gray-400">Software Engineer | Full Stack Developer</p>
+          </div>
           
+          <div className="flex gap-6">
+            <a 
+              href="mailto:kumaraashish56712@gmail.com" 
+              className="hover:text-blue-500 transition-colors"
+              aria-label="Email"
+            >
+              <Mail size={24} />
+            </a>
+            <a
+              href="https://github.com/kumaraashish"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition-colors"
+              aria-label="GitHub"
+            >
+              <Github size={24} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kumar-aashish-98b18323b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={24} />
+            </a>
+          </div>
         </div>
-        <div>
-          <h1>Industries</h1>
+        
+        <div className="mt-8 pt-8 border-t border-neutral-800 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center">
+          <p>© 2025 Kumar Aashish. All rights reserved.</p>
+          <p className="mt-2 md:mt-0">Built with React & Tailwind CSS</p>
         </div>
       </div>
-      <div className="w-[94%]  mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="text-center md:text-left mb-4 md:mb-0">
-          <h4 className="text-lg font-semibold">© 2025 Kumar Aashish</h4>
-          <p className="text-sm">Built with ❤️ using React & Tailwind CSS</p>
-        </div>
-        <div className="flex gap-4">
-          <a href="mailto:kumaraashish56712@gmail.com" className="info">
-            Email
-          </a>
-          <a
-            href="https://github.com/kumaraashish"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="info"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/kumaraashish"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="info"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </section>
+    </footer>
   );
 }
+
 export default Footer;
