@@ -19,7 +19,7 @@ function Footer() {
               <Mail size={24} />
             </a>
             <a
-              href="https://github.com/kumaraashish"
+              href="https://github.com/kumaraashish435"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-500 transition-colors"

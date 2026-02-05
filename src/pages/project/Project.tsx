@@ -114,7 +114,7 @@ function Project() {
         <Reveal>
            <h3 className="text-2xl font-[Coolvetica] text-white mb-6">Interested in more?</h3>
            <a 
-             href="https://github.com/kumaraashish" 
+             href="https://github.com/kumaraashish435" 
              target="_blank" 
              rel="noopener noreferrer"
            >

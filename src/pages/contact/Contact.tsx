@@ -72,7 +72,7 @@ function Contact() {
                       <Linkedin size={20} /> LinkedIn
                     </Button>
                  </a>
-                 <a href="https://github.com/kumaraashish" target="_blank" rel="noopener noreferrer">
+                 <a href="https://github.com/kumaraashish435" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" className="rounded-full gap-2">
                       <Github size={20} /> GitHub
                     </Button>
