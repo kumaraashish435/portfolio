@@ -47,14 +47,14 @@ function Project() {
   return (
     <div className="bg-black min-h-screen text-white pt-24 pb-12 overflow-x-hidden">
       <Section className="pb-12">
-        <div className="max-w-4xl mx-auto text-center md:text-left">
+        <div className="max-w-6xl mx-auto text-center md:text-left">
           <Reveal>
             <h1 className="text-5xl md:text-8xl font-[Coolvetica] mb-6 tracking-tight">
               Selected Works<span className="text-indigo-500">.</span>
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="text-xl text-gray-400 max-w-2xl leading-relaxed font-light">
+            <p className="text-xl text-gray-300 max-w-2xl leading-relaxed font-light">
               A collection of projects highlighting my expertise in <span className="text-white">AI, Machine Learning, and Automation</span>. 
               Solving real-world problems with data-driven solutions.
             </p>
@@ -90,7 +90,7 @@ function Project() {
                   </h3>
                 </div>
                 
-                <p className="text-gray-400 leading-relaxed mb-6 flex-grow font-light">
+                <p className="text-gray-300 leading-relaxed mb-6 flex-grow font-light">
                   {project.description}
                 </p>
                 

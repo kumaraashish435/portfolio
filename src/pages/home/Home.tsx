@@ -26,7 +26,7 @@ function Home() {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[128px]" />
         </div>
         
-        <div className="z-10 max-w-5xl mx-auto space-y-8">
+        <div className="z-10 max-w-6xl mx-auto space-y-8">
           <Reveal>
             <h2 className="text-xl md:text-2xl text-indigo-400 font-medium tracking-[0.2em] uppercase mb-4">
               Software Engineer | AI & ML Enthusiast
@@ -40,7 +40,7 @@ function Home() {
           </Reveal>
           
           <Reveal delay={0.6}>
-            <p className="text-lg md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-light">
+            <p className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed font-light">
               Software Engineer with <span className="text-white font-medium">2+ years of experience</span> in application development, web scraping, and machine learning. 
               Specializing in building scalable solutions with <span className="text-indigo-400">Python, C++, and ASP.NET</span>.
             </p>
@@ -72,7 +72,7 @@ function Home() {
 
       {/* Introduction Section */}
       <Section className="bg-neutral-950/50">
-        <div className="flex flex-col md:flex-row items-center gap-16">
+        <div className="flex flex-col md:flex-row items-center gap-16 max-w-6xl mx-auto">
           <div className="w-full md:w-1/2">
             <Reveal>
               <div className="relative aspect-[4/5] max-w-md mx-auto rounded-2xl overflow-hidden group">
@@ -125,13 +125,13 @@ function Home() {
         <div className="text-center mb-20">
           <Reveal>
             <h2 className="text-3xl md:text-5xl font-[Coolvetica] mb-6">Technical Arsenal</h2>
-            <p className="text-gray-400 max-w-xl mx-auto">
+            <p className="text-gray-300 max-w-xl mx-auto">
               A curated stack of technologies I use to build scalable, efficient, and intelligent systems.
             </p>
           </Reveal>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {skills.map((skill, index) => (
             <Reveal key={index} delay={index * 0.1}>
               <Card className="h-full group hover:border-indigo-500/30">
@@ -141,7 +141,7 @@ function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">{skill.name}</h3>
-                    <p className="text-sm text-gray-400 leading-relaxed">{skill.desc}</p>
+                    <p className="text-sm text-gray-300 leading-relaxed">{skill.desc}</p>
                   </div>
                 </div>
               </Card>
@@ -159,7 +159,7 @@ function Home() {
             </h2>
           </Reveal>
           <Reveal delay={0.3}>
-            <p className="text-xl text-gray-400 mb-8">
+            <p className="text-xl text-gray-300 mb-8">
               Let's collaborate on your next big project.
             </p>
           </Reveal>

@@ -8,7 +8,7 @@ function Contact() {
   return (
     <div className="bg-black min-h-screen text-white pt-24 pb-12 overflow-x-hidden">
       <Section>
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           
           {/* Contact Info */}
           <div className="space-y-10">
@@ -16,7 +16,7 @@ function Contact() {
               <h1 className="text-5xl md:text-7xl font-[Coolvetica] tracking-tight mb-6">
                 Let's Talk<span className="text-indigo-500">.</span>
               </h1>
-              <p className="text-xl text-gray-400 font-light leading-relaxed">
+              <p className="text-xl text-gray-300 font-light leading-relaxed">
                 Whether you have a project in mind, a question about my work, or just want to connect — I'm all ears.
               </p>
             </Reveal>
@@ -28,7 +28,7 @@ function Contact() {
                     <Mail size={24} />
                   </div>
                   <div>
-                    <h3 className="text-sm uppercase tracking-wider text-gray-500 mb-1">Email Me</h3>
+                    <h3 className="text-sm uppercase tracking-wider text-gray-400 mb-1">Email Me</h3>
                     <a href="mailto:kumaraashish56712@gmail.com" className="text-lg font-medium text-white hover:text-indigo-400 transition-colors">
                       kumaraashish56712@gmail.com
                     </a>
@@ -42,7 +42,7 @@ function Contact() {
                     <Phone size={24} />
                   </div>
                   <div>
-                    <h3 className="text-sm uppercase tracking-wider text-gray-500 mb-1">Call Me</h3>
+                    <h3 className="text-sm uppercase tracking-wider text-gray-400 mb-1">Call Me</h3>
                     <a href="tel:+919736782785" className="text-lg font-medium text-white hover:text-purple-400 transition-colors">
                       (+91) 97367 82785
                     </a>
@@ -56,7 +56,7 @@ function Contact() {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h3 className="text-sm uppercase tracking-wider text-gray-500 mb-1">Location</h3>
+                    <h3 className="text-sm uppercase tracking-wider text-gray-400 mb-1">Location</h3>
                     <p className="text-lg font-medium text-white">
                       India
                     </p>
@@ -88,42 +88,42 @@ function Contact() {
                 <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium text-gray-400 ml-1">Name</label>
+                      <label htmlFor="name" className="text-sm font-medium text-gray-300 ml-1">Name</label>
                       <input 
                         type="text" 
                         id="name"
                         placeholder="Your Name" 
-                        className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all placeholder:text-gray-700"
+                        className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all placeholder:text-gray-500"
                       />
                     </div>
                     <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium text-gray-400 ml-1">Email</label>
+                      <label htmlFor="email" className="text-sm font-medium text-gray-300 ml-1">Email</label>
                       <input 
                         type="email" 
                         id="email"
                         placeholder="your@email.com" 
-                        className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all placeholder:text-gray-700"
+                        className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all placeholder:text-gray-500"
                       />
                     </div>
                   </div>
                   
                   <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium text-gray-400 ml-1">Subject</label>
+                    <label htmlFor="subject" className="text-sm font-medium text-gray-300 ml-1">Subject</label>
                     <input 
                       type="text" 
                       id="subject"
                       placeholder="What's this about?" 
-                      className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all placeholder:text-gray-700"
+                      className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all placeholder:text-gray-500"
                     />
                   </div>
                   
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium text-gray-400 ml-1">Message</label>
+                    <label htmlFor="message" className="text-sm font-medium text-gray-300 ml-1">Message</label>
                     <textarea 
                       id="message"
                       rows={5}
                       placeholder="Tell me about your project..." 
-                      className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all resize-none placeholder:text-gray-700"
+                      className="w-full bg-white/5 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all resize-none placeholder:text-gray-500"
                     />
                   </div>
                   

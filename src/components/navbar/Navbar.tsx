@@ -39,7 +39,7 @@ const NavBar = () => {
         scrolled ? "bg-black/50 backdrop-blur-xl border-white/5 py-4" : "bg-transparent py-6"
       )}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
+    <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
         <NavLink to="/" className="text-2xl font-bold font-[Coolvetica] tracking-wider relative group">
           <span className="text-white">KUMAR</span>
           <span className="text-indigo-500 group-hover:text-purple-500 transition-colors duration-300">.</span>
@@ -48,7 +48,6 @@ const NavBar = () => {
         {/* Desktop Menu */}
         <nav className="hidden md:flex gap-8 relative">
           {navLinks.map((link) => {
-            const isActive = location.pathname === link.path;
             return (
               <NavLink
                 key={link.name}
@@ -56,18 +55,11 @@ const NavBar = () => {
                 className={({ isActive }) =>
                   cn(
                     "relative text-sm font-medium tracking-wide transition-colors hover:text-white",
-                    isActive ? "text-white" : "text-gray-400"
+                    isActive ? "text-white" : "text-gray-300"
                   )
                 }
               >
                 {link.name}
-                {isActive && (
-                  <motion.div
-                    layoutId="navbar-underline"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"
-                    transition={{ type: "spring", stiffness: 350, damping: 30 }}
-                  />
-                )}
               </NavLink>
             );
           })}
@@ -105,7 +97,7 @@ const NavBar = () => {
                     className={({ isActive }) =>
                       cn(
                         "text-3xl font-[Coolvetica] tracking-wider transition-colors",
-                        isActive ? "text-white" : "text-gray-500 hover:text-white"
+                        isActive ? "text-white" : "text-gray-400 hover:text-white"
                       )
                     }
                   >
